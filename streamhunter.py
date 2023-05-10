@@ -1,6 +1,6 @@
 #!/usr/bin/python
-# coding=utf-8
-# Author github.com/Eltotiz
+# Encoding=utf-8
+# Autor github.com/Eltotiz
 
 import os
 from colorama import Fore, init
@@ -27,11 +27,12 @@ print("""
     |__   |  _|  _| -_| .'|     |     | | |   |  _| -_|  _|
     |_____|_| |_| |___|__,|_|_|_|__|__|___|_|_|_| |___|_|  
 
-                Created by github.com/Eltotiz
+                Erstellt von github.com/Eltotiz
+              Übersetzt von github.com/NoahOnFyre
                 """)
-input(" [+] Press enter to start!")
+input(" [+] Drücke Enter um zu beginnen!")
 print()
-print(" [+] Searching videos...")
+print(" [+] Suche Videos...")
 print()
 print()
 
@@ -42,10 +43,10 @@ while True:
     src = requests.get(f"https://streamable.com/{minus}")
     try:
         if src.status_code != 404:
-            print(Fore.GREEN + f" [+] https://streamable.com/{minus} VALID LINK")
+            print(Fore.GREEN + f" [+] https://streamable.com/{minus} - Gültiger Link")
                 
     except Exception as e:
         print()
-        print(" [?] There was an error connecting to streamable.com...")
-        print(f" [?] Error message: {e}")
-        input(" [?] Press enter to quit.")
+        print(" [?] Ein Fehler ist bei dem Verbindungsaufbau zu streamable.com aufgetreten.")
+        print(f" [?] Fehlerbeschreibung: {e}")
+        input(" [?] Drücke Enter zum verlassen.")
