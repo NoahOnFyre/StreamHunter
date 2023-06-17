@@ -18,4 +18,4 @@
 
 # Kontakt
 
-[Discord: TOTIZ346543#5555](https://discord.com)
+[Discord: Totiz#5555](https://discord.com)
